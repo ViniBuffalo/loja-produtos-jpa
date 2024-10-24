@@ -38,7 +38,7 @@ public class PerformanceConsultas {
         pedido.adicionarItem(new ItemPedido(40, pedido, videogame));
 
         Pedido pedido2 = new Pedido(cliente);
-        pedido.adicionarItem(new ItemPedido(2, pedido, macbook));
+        pedido2.adicionarItem(new ItemPedido(2, pedido, macbook));
 
         EntityManager em = JPAUtil.getEntityManager();
         ProdutoDao produtoDao = new ProdutoDao(em);
